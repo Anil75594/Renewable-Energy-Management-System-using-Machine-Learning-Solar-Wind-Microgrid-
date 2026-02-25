@@ -7,7 +7,6 @@ from sklearn.model_selection import train_test_split
 
 # Initialize Google Earth Engine
 ee.Authenticate()
-ee.Initialize(project='clean-algebra-473715-b0')
 
 class SimpleSolarPredictor:
     def __init__(self, latitude, longitude):
@@ -172,4 +171,5 @@ if __name__ == "__main__":
         predictor.train_model(sample_df)
         predictor.predict_tomorrow()
     
+
     print("\nThank you for using the Solar Energy Predictor!")
